@@ -40,33 +40,34 @@ const claimFaucet = async (wallet) => {
         const response = await axios.post(FAUCET_URL, { address: wallet }, {
             headers: { "Content-Type": "application/json" }
         });
-        console.log(chalk.green(`Success: ${JSON.stringify(response.data)}`));
+        console.log(chalk.green(`[SUCCESS] Claimed for ${wallet}: ${response.data.message || "Success"}`));
     } catch (error) {
-        console.log(chalk.red(`Error: ${error.response ? error.response.data : error.message}`));
+        console.log(chalk.red(`[ERROR] Failed for ${wallet}: ${error.response ? error.response.data : error.message}`));
     }
 };
 
 function startCountdown(duration, callback) {
-    let timeLeft = duration;
+    let timeLeft = duration / 1000;
     const countdown = setInterval(() => {
-        const minutes = Math.floor(timeLeft / 60000);
-        const seconds = ((timeLeft % 60000) / 1000).toFixed(0);
-        process.stdout.write(`\rNext claim in: ${minutes}m ${seconds}s `);
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = (timeLeft % 60).toFixed(0);
+        process.stdout.write(`\rWaiting ${minutes} minutes ${seconds} seconds before next claim... `);
         
         if (timeLeft <= 0) {
             clearInterval(countdown);
             console.log("\nClaiming now...");
             callback();
         }
-        timeLeft -= 1000;
+        timeLeft--;
     }, 1000);
 }
 
 const startClaiming = () => {
     claimFaucet(wallets[currentWalletIndex]);
     currentWalletIndex = (currentWalletIndex + 1) % wallets.length;
+    console.log(chalk.yellow("Waiting 20 minutes before next claim..."));
     startCountdown(INTERVAL, startClaiming);
 };
 
 console.log(chalk.magenta(`Starting auto-claim bot for ${wallets.length} wallets...`));
-startCountdown(INTERVAL, startClaiming);
+startClaiming();

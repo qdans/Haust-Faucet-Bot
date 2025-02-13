@@ -1,0 +1,17 @@
+{
+  "name": "haust-faucet-bot",
+  "version": "1.0.0",
+  "description": "Auto Faucet Claimer for Haust",
+  "main": "bot.js",
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.3.0",
+    "chalk": "^5.0.0",
+    "fs": "latest"
+  },
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "author": "qdans",
+  "license": "MIT"
+}

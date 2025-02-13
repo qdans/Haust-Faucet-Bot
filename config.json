@@ -1,0 +1,5 @@
+{
+  "faucet_url": "https://faucet.haust.app/",
+  "interval_minutes": 20,
+  "headless": true
+}

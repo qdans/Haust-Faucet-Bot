@@ -1,0 +1,15 @@
+{
+  "name": "haust-faucet-bot",
+  "version": "1.0.0",
+  "description": "Automated faucet claiming bot for Haust using Puppeteer",
+  "main": "bot.js",
+  "dependencies": {
+    "puppeteer": "^20.0.0",
+    "fs-extra": "^10.0.0"
+  },
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "author": "qdans",
+  "license": "MIT"
+}

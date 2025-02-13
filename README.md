@@ -6,21 +6,22 @@ Haust Faucet Bot is an automated script that periodically claims rewards from [H
 ## 🚀 Features
 - **Multi-wallet support**: Reads multiple wallet addresses from `wallet.txt`.
 - **Automated claiming**: Claims rewards at a set interval (default: 20 minutes, configurable).
-- **Headless mode**: Runs in the background without opening a browser (optional).
+- **Headless mode**: Uses Puppeteer's new headless mode for better performance.
 - **Logging system**: Tracks all activities in `log.txt` for monitoring.
+- **Root-friendly execution**: Supports running without sandbox issues.
 
-## 📦 Installation
-### 1️⃣ Prerequisites
+## 📞 Installation
+### 1⃣ Prerequisites
 Ensure you have [Node.js](https://nodejs.org/) installed on your system.
 
-### 2️⃣ Clone the Repository
+### 2⃣ Clone the Repository
 ```sh
 git clone https://github.com/qdans/Haust-Faucet-Bot.git
 cd Haust-Faucet-Bot
 ```
 Alternatively, you can download and extract the ZIP file.
 
-### 3️⃣ Install Dependencies
+### 3⃣ Install Dependencies
 ```sh
 npm install
 ```
@@ -33,17 +34,16 @@ Edit `config.json` to customize bot settings:
   "interval": 20,
   "faucetUrl": "https://faucet.haust.app/"
 }
-
 ```
 - **`interval_minutes`**: Adjust claim interval (default: 20 minutes).
-- **`headless`**: Set `false` to display the browser while running.
+- **`headless`**: Uses Puppeteer's `"new"` mode to avoid deprecation warnings.
 
 ## 📝 Adding Wallet Addresses
 List wallet addresses in `wallet.txt`, one per line:
 ```
-0x1234567890abcdef1234567890abcdef12345678
-0xabcdefabcdefabcdefabcdefabcdefabcdefabcd
-0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef
+0xYourWalletAddress1
+0xYourWalletAddress2
+0xYourWalletAddress3
 ```
 
 ## ▶️ Running the Bot
@@ -56,10 +56,20 @@ or
 node bot.js
 ```
 
-## 📜 Logging
+## 🐝 Troubleshooting
+- If running as root, use:
+  ```sh
+  node bot.js --no-sandbox
+  ```
+- If Puppeteer fails to launch, install missing dependencies:
+  ```sh
+  apt-get install -y libatk1.0-0 libgtk-3-0 libx11-xcb1 libnss3 libxcomposite1 libxrandr2 libasound2
+  ```
+
+## 💜 Logging
 All claim attempts and activities are logged in `log.txt` for tracking purposes.
 
-## 🛑 Stopping the Bot
+## 🛡️ Stopping the Bot
 To stop the bot, press **Ctrl + C** in the terminal.
 
 ## ⚠️ Disclaimer
@@ -70,4 +80,3 @@ This bot is intended for educational purposes only. Use it responsibly and at yo
 For issues or suggestions, open an [issue](https://github.com/qdans/Haust-Faucet-Bot/issues) on GitHub.
 
 Happy claiming! 🚀
-

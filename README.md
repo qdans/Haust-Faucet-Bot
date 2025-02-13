@@ -57,14 +57,14 @@ node bot.js
 ```
 
 ## 🐝 Troubleshooting
-- If running as root, use:
-  ```sh
-  node bot.js --no-sandbox
-  ```
-- If Puppeteer fails to launch, install missing dependencies:
-  ```sh
-  apt-get install -y libatk1.0-0 libgtk-3-0 libx11-xcb1 libnss3 libxcomposite1 libxrandr2 libasound2
-  ```
+If running as root, use:
+```sh
+node bot.js --no-sandbox
+```
+If Puppeteer fails to launch, install missing dependencies:
+```sh
+apt-get install -y libatk1.0-0 libgtk-3-0 libx11-xcb1 libnss3 libxcomposite1 libxrandr2 libasound2
+```
 
 ## 💜 Logging
 All claim attempts and activities are logged in `log.txt` for tracking purposes.

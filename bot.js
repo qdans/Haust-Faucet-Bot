@@ -8,7 +8,7 @@ console.log(`
 ██║  ██║██╔══██║██║╚██╗██║╚════██║
 ██████╔╝██║  ██║██║ ╚████║███████║
 ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝
-Auto Generate Proxy Bot
+Auto Claim Haust Faucet
 GitHub: https://github.com/qdans
 `);
 

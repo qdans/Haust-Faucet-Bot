@@ -4,10 +4,10 @@
 Haust Faucet Bot is an automated tool designed to claim free tokens from the [Haust Faucet](https://faucet.haust.app/) at regular intervals. This bot supports multiple wallets and ensures efficient claiming while adhering to the cooldown period.
 
 ## Features
-- 🚀 **Automated claiming** every 20 minutes per wallet.
-- 🔄 **Multi-wallet support**, sequentially processing claims.
-- 🌐 **Lightweight & easy-to-use**, runs on Node.js.
-- 🛠️ **Configurable wallet list** via `wallets.txt`.
+🚀 **Automated claiming** every 20 minutes per wallet.
+🔄 **Multi-wallet support**, sequentially processing claims.
+🌐 **Lightweight & easy-to-use**, runs on Node.js.
+🛠️ **Configurable wallet list** via `wallets.txt`.
 
 ## Requirements
 - Node.js (v16 or higher recommended)

@@ -1,34 +1,32 @@
 # Haust Faucet Bot
 
-This bot automatically claims faucet rewards from [Haust Faucet](https://faucet.haust.app/) at a set interval using Puppeteer.
+## 📌 Overview
+Haust Faucet Bot is an automated script that periodically claims rewards from [Haust Faucet](https://faucet.haust.app/) using Puppeteer. It supports multiple wallets, customizable intervals, and headless mode for seamless operation.
 
 ## 🚀 Features
-- **Multi-wallet support**: Reads multiple wallets from `wallet.txt`.
-- **Auto-claim every 20 minutes** (configurable in `config.json`).
-- **Headless mode** for silent operation (configurable).
-- **Logging system**: Logs all activity in `log.txt`.
+- **Multi-wallet support**: Reads multiple wallet addresses from `wallet.txt`.
+- **Automated claiming**: Claims rewards at a set interval (default: 20 minutes, configurable).
+- **Headless mode**: Runs in the background without opening a browser (optional).
+- **Logging system**: Tracks all activities in `log.txt` for monitoring.
 
 ## 📦 Installation
+### 1️⃣ Prerequisites
+Ensure you have [Node.js](https://nodejs.org/) installed on your system.
 
-1. **Install Node.js** (if not installed)  
-   Download and install [Node.js](https://nodejs.org/).
-   
-2. **Clone or Download this repository**  
-   ```sh
-   git clone https://github.com/yourusername/HaustFaucetBot.git
-   cd HaustFaucetBot
-   ```
-   Or extract the downloaded ZIP file.
+### 2️⃣ Clone the Repository
+```sh
+git clone https://github.com/yourusername/HaustFaucetBot.git
+cd HaustFaucetBot
+```
+Alternatively, you can download and extract the ZIP file.
 
-3. **Install dependencies**  
-   ```sh
-   npm install
-   ```
+### 3️⃣ Install Dependencies
+```sh
+npm install
+```
 
 ## ⚙️ Configuration
-
-Modify `config.json` to adjust settings:
-
+Edit `config.json` to customize bot settings:
 ```json
 {
   "faucet_url": "https://faucet.haust.app/",
@@ -36,13 +34,11 @@ Modify `config.json` to adjust settings:
   "headless": true
 }
 ```
-- **`interval_minutes`**: Set the delay between claims (default: 20 minutes).
-- **`headless`**: Set `false` if you want to see the browser while running.
+- **`interval_minutes`**: Adjust claim interval (default: 20 minutes).
+- **`headless`**: Set `false` to display the browser while running.
 
-## 📝 Add Wallets
-
-Add your wallet addresses in `wallet.txt`, one per line:
-
+## 📝 Adding Wallet Addresses
+List wallet addresses in `wallet.txt`, one per line:
 ```
 0x1234567890abcdef1234567890abcdef12345678
 0xabcdefabcdefabcdefabcdefabcdefabcdefabcd
@@ -50,31 +46,27 @@ Add your wallet addresses in `wallet.txt`, one per line:
 ```
 
 ## ▶️ Running the Bot
-
 Start the bot using:
-
 ```sh
 npm start
 ```
-
 or
-
 ```sh
 node bot.js
 ```
 
-## 📜 Logs
-
-All claim attempts are recorded in `log.txt`.
+## 📜 Logging
+All claim attempts and activities are logged in `log.txt` for tracking purposes.
 
 ## 🛑 Stopping the Bot
-
 To stop the bot, press **Ctrl + C** in the terminal.
 
-## 🤝 Contributing
-
-Feel free to fork and improve the bot. Pull requests are welcome!
-
 ## ⚠️ Disclaimer
+This bot is intended for educational purposes only. Use it responsibly and at your own risk.
 
-This bot is for educational purposes. Use at your own risk!
+---
+### 💡 Need Help?
+For issues or suggestions, open an [issue](https://github.com/yourusername/HaustFaucetBot/issues) on GitHub.
+
+Happy claiming! 🚀
+

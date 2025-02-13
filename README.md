@@ -27,11 +27,10 @@ Haust Faucet Bot is an automated tool designed to claim free tokens from the [Ha
 
 3. Configure your wallets:
    - Open `wallets.txt` and add your wallet addresses in the format:
-   ```json
-   [
-     "0xYourWalletAddress1",
-     "0xYourWalletAddress2"
-   ]
+   ```txt
+   WALLET_ADDRESS_1
+   WALLET_ADDRESS_2
+   WALLET_ADDRESS_3
    ```
 
 4. Start the bot:
@@ -40,7 +39,7 @@ Haust Faucet Bot is an automated tool designed to claim free tokens from the [Ha
    ```
 
 ## How It Works
-- The bot reads wallet addresses from `wallets.json`.
+- The bot reads wallet addresses from `wallets.txt`.
 - It sends a claim request to the Haust Faucet API.
 - After claiming, it waits 20 minutes before moving to the next wallet.
 - The cycle repeats indefinitely.

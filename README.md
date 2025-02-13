@@ -29,10 +29,11 @@ npm install
 Edit `config.json` to customize bot settings:
 ```json
 {
-  "faucet_url": "https://faucet.haust.app/",
-  "interval_minutes": 20,
-  "headless": true
+  "headless": "new",
+  "interval": 20,
+  "faucetUrl": "https://faucet.haust.app/"
 }
+
 ```
 - **`interval_minutes`**: Adjust claim interval (default: 20 minutes).
 - **`headless`**: Set `false` to display the browser while running.

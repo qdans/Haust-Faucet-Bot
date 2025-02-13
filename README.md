@@ -66,7 +66,7 @@ This bot is intended for educational purposes only. Use it responsibly and at yo
 
 ---
 ### 💡 Need Help?
-For issues or suggestions, open an [issue](https://github.com/yourusername/HaustFaucetBot/issues) on GitHub.
+For issues or suggestions, open an [issue](https://github.com/qdans/Haust-Faucet-Bot/issues) on GitHub.
 
 Happy claiming! 🚀
 

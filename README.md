@@ -15,8 +15,8 @@ Ensure you have [Node.js](https://nodejs.org/) installed on your system.
 
 ### 2️⃣ Clone the Repository
 ```sh
-git clone https://github.com/yourusername/HaustFaucetBot.git
-cd HaustFaucetBot
+git clone https://github.com/qdans/Haust-Faucet-Bot.git
+cd Haust-Faucet-Bot
 ```
 Alternatively, you can download and extract the ZIP file.
 

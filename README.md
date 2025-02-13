@@ -66,5 +66,4 @@ Feel free to fork the repository and submit pull requests to improve the bot.
 This bot is for educational purposes only. Use it responsibly and comply with Haust Faucet's terms of service.
 
 ## License
-MIT License. See `LICENSE` for details.
-
+[MIT License](https://github.com/qdans/Haust-Faucet-Bot/blob/main/LICENSE).

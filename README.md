@@ -27,7 +27,7 @@ Haust Faucet Bot is an automated tool designed to claim free tokens from the [Ha
 
 3. Configure your wallets:
    - Open `wallets.txt` and add your wallet addresses in the format:
-   ```json
+   ```txt
    WALLET_ADDRESS_1
    WALLET_ADDRESS_2
    WALLET_ADDRESS_3
